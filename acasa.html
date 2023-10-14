@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+<style>
+body {
+  margin-bottom:5%;
+  margin-top:5%;
+  margin-left:10%;
+  margin-right:10%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:rgb(207, 137, 184);
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #50074a !important;
+  position: fixed;
+  top: 0;
+  width: 80%;
+  z-index: 1;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ffffff;
+  color: black;
+}
+
+.topnav a.active {
+ background-color: #c084b2;
+  color: white;
+}
+
+h1 {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.mySlides {display:none;}
+
+div.transbox {
+  /* margin: 30px; */
+  background-color:rgb(255, 232, 232);
+  border: 1px solid black; 
+}
+
+div.transbox p {
+  margin-left: 5%;
+  margin-right: 5%;
+  color: #000000;
+  text-align: justify;
+}
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="acasa.html"><span class="glyphicon glyphicon-home"></span> Acasă</a>
+  <a href="roma.html"><i class="fa fa-institution"></i> Roma</a>
+  <a href="vatican.html"><i class="fa fa-institution"></i> Vatican</a>
+  <a href="istorie.html"><i class="fa fa-newspaper-o"></i> Istorie</a>
+  <a href="atractii.html"><i class="fa fa-picture-o"></i> Atracții</a>
+  <a href="contact.html"><i class="fa fa-address-book"></i> Contact</a>
+</div>
+
+<div class="transbox">
+  <div style="padding-left:16px">
+    <h1>ROMA ȘI VATICANUL</h1>
+  </div>
+  
+  <div class="w3-content w3-display-container">
+    <img class="mySlides" src="Poze/Roma.jpg" style="width:100%">
+    <img class="mySlides" src="Poze/roma1.jpg" style="width:100%">
+    <img class="mySlides" src="Poze/vatican.jpg" style="width:100%">
+    <img class="mySlides" src="Poze/roma2.jpg" style="width:100%">
+    
+    <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+  </div>
+  
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      if (n > x.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      x[slideIndex-1].style.display = "block";  
+    }
+  </script>
+  <br>
+  <br>
+  <div style="padding-left:16px">
+    <p><b>Roma,</b> oraș istoric și capitala provinciei Roma, a regiunii Lazio și a țării Italiei. Odată capitală a unei republici
+      și a unui imperiu antic ale căror armate și politică au definit lumea occidentală în antichitate și au lăsat amprente 
+      aparent de neșters ulterior, sediul spiritual și fizic al Bisericii Romano-Catolice și locul de vârf al realizării 
+      artistice și intelectuale majore, Roma. este Orașul Etern, rămânând astăzi o capitală politică, un centru religios și 
+      un memorial al imaginației creatoare a trecutului.
+    </p>
+    <p><b>Orașul Vatican,</b> în întreg statul Vatican, stat ecleziastic, reședința Bisericii Romano-Catolice și o enclavă din Roma, 
+      situată pe malul de vest al râului Tibru. Vaticanul este cel mai mic stat-națiune complet independent din lume.
+    </p>
+    <p>În perioada dintre secolul al IV-lea și până în 1870, Vaticanul a câștigat controlul asupra teritoriului din jurul Romei
+      și a servit drept capitală a Statelor Papale. În 1929, suveranitatea independentă a Vaticanului a fost recunoscută de guvernul 
+      fascist italian prin Tratatul de la Lateran.
+    </p>
+  <br>
+  <br>
+
+  </div>
+        
+  </div>
+  </body>
+</html>
